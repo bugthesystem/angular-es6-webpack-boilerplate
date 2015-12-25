@@ -1,5 +1,5 @@
 # ng-espack-boilerplate
-Angular 1.4.8 + ES6 boilerplate application
+Angular 1.4.8 + ES6 application boilerplate
 
 
 
