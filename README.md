@@ -6,7 +6,7 @@ Angular 1.4.8 + ES6 application boilerplate
 - [x] [Webpack](https://webpack.github.io/) Setup
   - [x] [Babel](https://babeljs.io/)
   - [x] [Isparta](https://github.com/douglasduteil/isparta) [Instrumenter Loader](https://github.com/ColCh/isparta-instrumenter-loader)
-  - [x] Bootstrap
+  - [x] [Bootstrap](http://getbootstrap.com/)
 - [x] Gulp.js Setup
   - [x] [Angular Template Cache](https://github.com/miickel/gulp-angular-templatecache)
   - [x] [Webpack](https://webpack.github.io/)
