@@ -40,11 +40,11 @@ bower install
 ## Development
 All scripts are run with `npm run [script]`, for example: `npm run test`.
 
-`build`        - generate a minified build to `public` folder
-`test`         - run all tests
-`test:live`    - continuously run unit tests watching for changes
-`eslint:app`   - lint code in `app` folder
-`eslint:tests` - lint code in `tests` folder
+`build`        - generate a minified build to `public` folder  
+`test`         - run all tests  
+`test:live`    - continuously run unit tests watching for changes  
+`eslint:app`   - lint code in `app` folder  
+`eslint:tests` - lint code in `tests` folder  
 
 See what each script does by looking at the scripts section in `package.json`.
 
