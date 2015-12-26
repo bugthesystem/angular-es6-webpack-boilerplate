@@ -1,0 +1,21 @@
+{
+  "name": "ng-espack-boilerplate",
+  "version": "1.0.0",
+  "authors": [
+    "ziyasal"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "modernizr": "~3.2.0",
+    "respond": "~1.4.2",
+    "angular-seo": "*"
+  }
+}

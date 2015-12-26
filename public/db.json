@@ -1,0 +1,16 @@
+{
+  "messages": [
+    {
+      "id": 1,
+      "text": "Hi, Nikola Tesla"
+    },
+    {
+      "id": 2,
+      "text": "Hi, James Clerk Maxwell"
+    },
+    {
+      "id": 3,
+      "text": "Hi, Isaac Asimov"
+    }
+  ]
+}
