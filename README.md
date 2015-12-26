@@ -21,3 +21,4 @@ Angular 1.4.8 + ES6 application boilerplate
   - [x] Service test
   - [x] Directive test
   - [ ] Filter Test
+  - [ ] Http Inteceptor Test
