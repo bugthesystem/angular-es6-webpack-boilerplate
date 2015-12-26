@@ -25,6 +25,8 @@ gulp.task('build-dev', ['tpl-cache', 'webpack:build-dev'], function () {
 });
 
 gulp.task('webpack:dev-server', function (callback) {
+    gulp.watch(['app/**/*'], ['tpl-cache']);
+
     new WebpackDevServer(devCompiler, {
         contentBase: 'public',
         hot: true,
