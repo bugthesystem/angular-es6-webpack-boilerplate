@@ -7,8 +7,10 @@ matrix:
   fast_finish: true
 before_install:
     - "npm install -g gulp"
+    - "npm install -g bower"
 before_script:
     - "npm install"
+    - "bower install"
     - "npm install coveralls"
 script:
     - "npm run-script test-travis"
