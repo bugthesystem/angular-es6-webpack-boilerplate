@@ -12,6 +12,7 @@ Angular 1.4.8 + ES6 application boilerplate
   - [x] [Webpack](https://webpack.github.io/)
   - [x] [ESLint](http://eslint.org/blog/2014/11/es6-jsx-support/)
 - [x] Basic App Structure by following [Angular Style Guide](https://github.com/johnpapa/angular-styleguide)
+- [x] SEO ready configuration using [angular-seo](https://github.com/steeve/angular-seo)
 - [x] Testing Structure by following [official docs](https://docs.angularjs.org/guide/unit-testing) and [Testing Angular](https://github.com/daniellmb/angular-test-patterns)
   - [x] [Karma](http://karma-runner.github.io/0.13/index.html)
   - [x] [Jasmine](http://jasmine.github.io/2.0/introduction.html)
