@@ -20,4 +20,4 @@ Angular 1.4.8 + ES6 application boilerplate [![Build Status](https://travis-ci.o
   - [x] Service test
   - [x] Directive test
   - [ ] Filter Test
-  - [ ] Http Inteceptor Test
+  - [ ] Http interceptor Test
