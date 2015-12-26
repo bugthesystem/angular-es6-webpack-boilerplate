@@ -1,5 +1,5 @@
 # ng-espack-boilerplate
-Angular 1.4.8 + ES6 application boilerplate with testing practices 
+Angular 1.4.8 + ES6 application boilerplate with testing practices  
 [![Dependency Status](https://david-dm.org/ziyasal/ng-espack-boilerplate.svg)](https://david-dm.org/ziyasal/ng-espack-boilerplate) [![devDependency Status](https://david-dm.org/ziyasal/ng-espack-boilerplate/dev-status.svg)](https://david-dm.org/ziyasal/ng-espack-boilerplate#info=devDependencies) [![Build Status](https://travis-ci.org/ziyasal/ng-espack-boilerplate.svg)](https://travis-ci.org/ziyasal/ng-espack-boilerplate) [![Coverage Status](https://coveralls.io/repos/ziyasal/ng-espack-boilerplate/badge.svg?branch=master&service=github)](https://coveralls.io/github/ziyasal/ng-espack-boilerplate?branch=master) 
 
 ##Features
