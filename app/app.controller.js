@@ -6,7 +6,7 @@ export default class AppCtrl {
 
         $scope.$on('$stateChangeSuccess', (event, toState, toParams, fromState, fromParams)=> {
             if (angular.isDefined(toState.data.pageTitle)) {
-                this.pageTitle = toState.data.pageTitle + ' | AngularJS + ES6 application using Webpack';
+                this.pageTitle = `${toState.data.pageTitle} | AngularJS + ES6 application using Webpack`;
             }
         });
     }
