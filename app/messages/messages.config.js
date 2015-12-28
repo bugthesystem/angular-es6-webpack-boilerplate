@@ -3,7 +3,7 @@
         url: '/',
         views: {
             main: {
-                controller: 'MessagesCtrl',
+                controller: 'MessagesController',
                 templateUrl: 'messages/list.html',
                 controllerAs: 'vm'
             }

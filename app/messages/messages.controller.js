@@ -1,4 +1,4 @@
-﻿export default class MessagesCtrl {
+﻿export default class MessagesController {
     constructor($scope, logger, messageService) {
         this.messages = [];
         this.messageService = messageService;
@@ -23,4 +23,4 @@
     }
 }
 
-MessagesCtrl.$inject = ['$scope', 'logger', 'messageService'];
+MessagesController.$inject = ['$scope', 'logger', 'messageService'];

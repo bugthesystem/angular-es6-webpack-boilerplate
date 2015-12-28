@@ -1,6 +1,6 @@
 ﻿import angular from 'angular';
 
-export default class LayoutCtrl {
+export default class LayoutController {
     constructor($scope) {
         this.pageTitle = 'AngularJS + ES6 application using Webpack';
 
@@ -12,4 +12,4 @@ export default class LayoutCtrl {
     }
 }
 
-LayoutCtrl.$inject = ['$scope'];
+LayoutController.$inject = ['$scope'];
