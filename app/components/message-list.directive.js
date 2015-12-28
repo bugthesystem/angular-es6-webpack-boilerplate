@@ -1,7 +1,6 @@
 ﻿export default class MessageList {
     constructor() {
-        this.templateUrl = 'home/views/message-list.directive.html';
-        /*require*/
+        this.templateUrl = 'components/message-list.directive.html';
         this.restrict = 'E';
         this.scope = {
             messages: '=messages',

@@ -1,6 +1,6 @@
-﻿describe('AppCtrl', ()=> {
+﻿describe('LayoutCtrl', ()=> {
 
-    let appCtrl, mock, rootScope, controllerFactory;
+    let LayoutCtrl, mock, rootScope, controllerFactory;
 
     const pageTitleSuffix = ' | AngularJS + ES6 application using Webpack';
 
@@ -13,13 +13,13 @@
         });
 
         it('should exist', ()=> {
-            appCtrl = controllerFactory('AppCtrl', mock);
-            expect(!!appCtrl).toBe(true);
+            LayoutCtrl = controllerFactory('LayoutCtrl', mock);
+            expect(!!LayoutCtrl).toBe(true);
         });
 
         it('should define pageTitle property', ()=> {
-            appCtrl = controllerFactory('AppCtrl', mock);
-            expect(appCtrl.pageTitle).toBeDefined();
+            LayoutCtrl = controllerFactory('LayoutCtrl', mock);
+            expect(LayoutCtrl.pageTitle).toBeDefined();
         });
 
         it('should set pageTitle by handling $stateChangeSuccess event', function () {
@@ -28,10 +28,10 @@
                 data: {pageTitle: 'TEST'}
             };
 
-            appCtrl = controllerFactory('AppCtrl', mock);
+            LayoutCtrl = controllerFactory('LayoutCtrl', mock);
             rootScope.$broadcast('$stateChangeSuccess', stateData);
 
-            expect(appCtrl.pageTitle).toBe(stateData.data.pageTitle + pageTitleSuffix)
+            expect(LayoutCtrl.pageTitle).toBe(stateData.data.pageTitle + pageTitleSuffix)
         });
     });
 

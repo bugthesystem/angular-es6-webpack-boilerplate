@@ -1,4 +1,4 @@
-﻿import './styles'
+﻿import './layout/styles'
 
 import angular from 'angular';
 import uirouter from 'angular-ui-router';
@@ -11,11 +11,11 @@ import 'angular-animate';
 import '../bower_components/angular-seo/angular-seo';
 
 import config from './app.config';
-import AppCtrl from './app.controller';
+import LayoutCtrl from './layout/layout.controller.js';
 
-import home from './home';
+import home from './messages';
 import common from './common';
 
 angular.module('espackApp', [uirouter, home, common, 'templates', 'seo'])
     .config(config)
-    .controller('AppCtrl', AppCtrl);
+    .controller('LayoutCtrl', LayoutCtrl);

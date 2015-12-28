@@ -1,10 +1,10 @@
 ﻿export default function config($stateProvider) {
-    $stateProvider.state('home', {
+    $stateProvider.state('messages', {
         url: '/',
         views: {
             main: {
-                controller: 'HomeCtrl',
-                templateUrl: 'home/views/index.tpl.html',
+                controller: 'MessagesCtrl',
+                templateUrl: 'messages/list.html',
                 controllerAs: 'vm'
             }
         },
