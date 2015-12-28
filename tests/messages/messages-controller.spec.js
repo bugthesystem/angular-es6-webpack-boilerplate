@@ -1,4 +1,4 @@
-﻿describe('MessagesController', ()=> {
+﻿describe('MessagesCtrl', ()=> {
 
     let homeCtrl, mock, deferredResolution, rootScope, controllerFactory,
         mockData = [
@@ -17,25 +17,25 @@
         });
 
         it('should exist', ()=> {
-            homeCtrl = controllerFactory('MessagesController', mock);
+            homeCtrl = controllerFactory('MessagesCtrl', mock);
             expect(!!homeCtrl).toBe(true);
         });
 
         it('should define a messages Array property', () => {
-            homeCtrl = controllerFactory('MessagesController', mock);
+            homeCtrl = controllerFactory('MessagesCtrl', mock);
             expect(homeCtrl.messages instanceof Array).toBe(true);
         });
     });
 
-    describe('#activate', ()=> {
+    describe('#init', ()=> {
 
         beforeEach(()=> {
             _inject();
         });
 
         it('should be defined', ()=> {
-            homeCtrl = controllerFactory('MessagesController', mock);
-            expect(typeof homeCtrl.activate).toBe('function');
+            homeCtrl = controllerFactory('MessagesCtrl', mock);
+            expect(typeof homeCtrl.init).toBe('function');
         });
 
         it('should set messages property', () => {
@@ -44,7 +44,7 @@
 
             //when
             deferredResolution.resolve(mockData);
-            homeCtrl = controllerFactory('MessagesController', mock);
+            homeCtrl = controllerFactory('MessagesCtrl', mock);
             rootScope.$digest();
 
             //then
@@ -61,7 +61,7 @@
 
         it('should set messages property', () => {
             spyOn(mock.messageService, 'findAll').and.returnValue(deferredResolution.promise);
-            homeCtrl = controllerFactory('MessagesController', mock);
+            homeCtrl = controllerFactory('MessagesCtrl', mock);
             homeCtrl.init = ()=> {
             };//skip initialization because of testing loadMessages
 
