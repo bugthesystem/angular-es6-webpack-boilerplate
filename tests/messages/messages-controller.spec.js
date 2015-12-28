@@ -35,7 +35,7 @@
 
         it('should be defined', ()=> {
             homeCtrl = controllerFactory('MessagesController', mock);
-            expect(typeof homeCtrl.init).toBe('function');
+            expect(typeof homeCtrl.activate).toBe('function');
         });
 
         it('should set messages property', () => {
