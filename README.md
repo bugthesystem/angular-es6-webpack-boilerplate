@@ -35,6 +35,7 @@ git clone https://github.com/ziyasal/ng-espack-boilerplate.git
 cd ng-espack-boilerplate
 npm install
 bower install
+gulp
 ```
 
 ## Development
