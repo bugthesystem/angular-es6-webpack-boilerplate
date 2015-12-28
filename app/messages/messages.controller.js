@@ -4,11 +4,11 @@
         this.messageService = messageService;
         this.logger = logger;
 
-        this.init();
+        this.activate();
     }
 
-    init() {
-        this.loadMessages().then(()=> {
+    activate() {
+        return this.loadMessages().then(()=> {
             this.logger.info('init Home View');
         });
     }
@@ -17,6 +17,8 @@
     loadMessages() {
         return this.messageService.findAll().then(response=> {
             this.messages = response;
+
+            return this.messages;
         });
     }
 }
