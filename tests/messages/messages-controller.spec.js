@@ -27,7 +27,7 @@
         });
     });
 
-    describe('#init', ()=> {
+    describe('#activate', ()=> {
 
         beforeEach(()=> {
             _inject();
@@ -35,7 +35,7 @@
 
         it('should be defined', ()=> {
             homeCtrl = controllerFactory('MessagesCtrl', mock);
-            expect(typeof homeCtrl.init).toBe('function');
+            expect(typeof homeCtrl.activate).toBe('function');
         });
 
         it('should set messages property', () => {
