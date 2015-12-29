@@ -8,8 +8,8 @@ describe('MessageListDirective', ()=> {
                 text: 'Hi, Loretta Fitzgerald'
             }
         ],
-        expectedEmptyDataDirectiveOutput = '<h2 class="ng-binding">Message L-DR</h2><ul>    <!-- ngRepeat: message in vm.messages --></ul>',
-        expectedInvalidDirectiveOutput = '<h2 class="ng-binding"></h2><ul>    <!-- ngRepeat: message in vm.messages --></ul>'
+        expectedEmptyDataDirectiveOutput = '<h2 class="ng-binding">Message L-DR</h2><ul>    <!-- ngRepeat: message in vm.messages track by $index --></ul>',
+        expectedInvalidDirectiveOutput = '<h2 class="ng-binding"></h2><ul>    <!-- ngRepeat: message in vm.messages track by $index --></ul>'
 
 
     beforeEach(angular.mock.module('espackApp'));
