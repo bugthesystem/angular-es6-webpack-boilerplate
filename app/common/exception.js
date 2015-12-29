@@ -1,9 +1,7 @@
-
 export default function exception(logger) {
-    var service = {
-        catcher: catcher
+    return {
+        catcher
     };
-    return service;
 
     function catcher(message) {
         return function (reason) {
