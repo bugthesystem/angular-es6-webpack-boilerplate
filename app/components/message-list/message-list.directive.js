@@ -1,13 +1,13 @@
 ﻿export default class MessageList {
     constructor() {
-        this.templateUrl = 'components/message-list.directive.html';
+        this.templateUrl = 'components/message-list/message-list.directive.html';
         this.restrict = 'E';
         this.scope = {
             messages: '=messages',
             header: '=header'
         };
 
-        this.controller = MessageListCtrl;
+        this.controller = DirectiveController;
         this.controllerAs = 'vm';
         this.bindToController = true;
     }
@@ -24,10 +24,10 @@
 }
 
 
-class MessageListCtrl {
+class DirectiveController {
     constructor($scope) {
         //put your logic here
     }
 }
 
-MessageListCtrl.$inject = ['$scope'];
+DirectiveController.$inject = ['$scope'];

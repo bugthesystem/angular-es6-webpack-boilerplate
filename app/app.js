@@ -16,7 +16,8 @@ import LayoutController from './layout/layout.controller.js';
 import common from './common';
 import home from './messages';
 import filters from './filters';
+import services from './services';
 
-angular.module('espackApp', [uirouter, common, filters, home, 'templates', 'seo'])
+angular.module('espackApp', [uirouter, common, filters, services, home, 'templates', 'seo'])
     .config(config)
     .controller('LayoutController', LayoutController);
