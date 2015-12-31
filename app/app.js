@@ -13,9 +13,10 @@ import '../bower_components/angular-seo/angular-seo';
 import config from './app.config';
 import LayoutController from './layout/layout.controller.js';
 
-import home from './messages';
 import common from './common';
+import home from './messages';
+import filters from './filters';
 
-angular.module('espackApp', [uirouter, home, common, 'templates', 'seo'])
+angular.module('espackApp', [uirouter, common, filters, home, 'templates', 'seo'])
     .config(config)
     .controller('LayoutController', LayoutController);
