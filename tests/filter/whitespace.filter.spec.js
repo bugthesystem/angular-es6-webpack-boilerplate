@@ -1,7 +1,6 @@
 describe('WhiteSpaceFilter', ()=> {
 
-    let filter,filterMock;
-
+    let filterFactory, filterInstance;
 
     beforeEach(()=> {
         angular.mock.module('espackApp');
@@ -14,7 +13,7 @@ describe('WhiteSpaceFilter', ()=> {
         });
 
         it('should exist', ()=> {
-            expect(!!filter).toBe(true);
+            expect(!!filterFactory).toBe(true);
         });
 
     });
@@ -26,22 +25,18 @@ describe('WhiteSpaceFilter', ()=> {
         });
 
         it('should return same value', ()=> {
-            let actual ='Sample Text';
-            filterMock = filter('whiteSpace');
+            let actual = 'Sample Text';
+            filterInstance = filterFactory('whiteSpace');
 
             var expected = 'SampleText';
-            expect(filterMock(actual)).toEqual(expected);
+            expect(filterInstance(actual)).toEqual(expected);
         });
 
     });
 
-
-
     function _inject() {
-        inject(($filter)=> {
-
-            filter = $filter;
-
+        inject($filter=> {
+            filterFactory = $filter;
         });
     }
 });
