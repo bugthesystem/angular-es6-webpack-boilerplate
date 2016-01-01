@@ -23,7 +23,7 @@ Angular 1.4.8 + ES6 application boilerplate with testing practices
   - [x] Controller test
   - [x] Service test
   - [x] Directive test
-  - [ ] Filter Test
+  - [x] Filter Test
   - [ ] Http interceptor Test
   
 
