@@ -19,13 +19,16 @@ gulp.task('tpl-cache', function () {
         .pipe(gulp.dest('app'));
 });
 
+gulp.task('watch:html', function () {
+    return gulp.watch(['app/**/*.html'], ['tpl-cache']);
+});
+
 
 gulp.task('build-dev', ['tpl-cache', 'webpack:build-dev'], function () {
     gulp.watch(['app/**/*'], ['tpl-cache', 'webpack:build-dev']);
 });
 
 gulp.task('webpack:dev-server', function (callback) {
-    gulp.watch(['app/**/*'], ['tpl-cache']);
 
     new WebpackDevServer(devCompiler, {
         contentBase: 'public',
@@ -40,13 +43,11 @@ gulp.task('webpack:dev-server', function (callback) {
 
         gutil.log('[webpack-dev-server]', 'http://localhost:8080/webpack-dev-server/index.html');
 
-        // keep the server alive or continue?
         callback();
     });
 });
 
 gulp.task('webpack:build-dev', function (callback) {
-    // run webpack
     devCompiler.run(function (err, stats) {
         if (err) throw new gutil.PluginError('webpack:build-dev', err);
         gutil.log('[webpack:build-dev]', stats.toString({
@@ -61,4 +62,4 @@ gulp.task('json-server', function () {
     require('./index');
 });
 
-gulp.task('default', ['json-server', 'webpack:dev-server']);
+gulp.task('default', ['json-server', 'watch:html', 'webpack:dev-server']);
