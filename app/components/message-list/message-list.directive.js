@@ -11,13 +11,7 @@
         this.controllerAs = 'vm';
         this.bindToController = true;
     }
-
-    // Directive compile function
-    compile() {
-
-    }
-
-    // Directive link function
+    
     link() {
 
     }
