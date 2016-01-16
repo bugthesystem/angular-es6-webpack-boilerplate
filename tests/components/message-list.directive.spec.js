@@ -1,16 +1,13 @@
 describe('MessageListDirective', ()=> {
 
     let element, scope, compile, rootScope,
-        validTemplate = '<message-list messages="vm.messages" header="\'Message L-DR\'"></message-list>',
+        validTemplate = '<message-list messages="vm.messages" header="\'Message List\'"></message-list>',
         defaultData = [
             {
                 id: 0,
                 text: 'Hi, Loretta Fitzgerald'
             }
-        ],
-        expectedEmptyDataDirectiveOutput = '<h2 class="ng-binding">Message L-DR</h2><ul>    <!-- ngRepeat: message in vm.messages track by $index --></ul>',
-        expectedInvalidDirectiveOutput = '<h2 class="ng-binding"></h2><ul>    <!-- ngRepeat: message in vm.messages track by $index --></ul>'
-
+        ];
 
     beforeEach(angular.mock.module('espackApp'));
 
@@ -19,18 +16,16 @@ describe('MessageListDirective', ()=> {
     });
 
     describe('when created', function () {
-        it('should throw error when ngModel attribute not defined', function () {
-            //expect(()=> {
+        it('should not render list when messages property is empty', function () {
             element = createDirective(null, '<message-list></message-list>');
-            var expected = element.html().replace(/(\r|\n)/g, '');
-            expect(expected).toBe(expectedInvalidDirectiveOutput);
-            //}).toThrow();
+            var expected = element.find('li').size();
+            expect(expected).toBe(0);
         });
 
         it('should render the expected output', function () {
             element = createDirective();
-            var expected = element.html().replace(/(\r|\n)/g, '');
-            expect(expected).toBe(expectedEmptyDataDirectiveOutput);
+            var expected = element.find('li').first().text().trim();
+            expect(expected).toBe(defaultData[0].text);
         });
     });
 
@@ -47,7 +42,7 @@ describe('MessageListDirective', ()=> {
         let elm;
 
         //setup scope state
-        scope.data = data || defaultData;
+        scope.vm = {messages: data || defaultData};
 
         //create directive
         elm = compile(template || validTemplate)(scope);
