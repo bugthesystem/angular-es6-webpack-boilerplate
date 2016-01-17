@@ -11,12 +11,11 @@
         this.controllerAs = 'vm';
         this.bindToController = true;
     }
-    
-    link() {
 
+    link(scope, attrs) {
+        //
     }
 }
-
 
 class DirectiveController {
     constructor($scope) {
