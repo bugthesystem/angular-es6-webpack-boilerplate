@@ -8,8 +8,12 @@ var webpackConfig = require('./webpack.config.js');
 var WebpackDevServer = require('webpack-dev-server');
 
 var webpackDevCfg = Object.create(webpackConfig);
-webpackDevCfg.devtool = 'sourcemap';
+webpackDevCfg.devtool = 'eval-source-map';
 webpackDevCfg.debug = true;
+webpackDevCfg.output.pathinfo = true;
+webpackDevCfg.cache = true;
+webpackDevCfg.watch = true;
+        
 var devCompiler = webpack(webpackDevCfg);
 
 gulp.task('tpl-cache', function() {
