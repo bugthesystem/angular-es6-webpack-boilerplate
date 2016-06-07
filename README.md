@@ -1,4 +1,4 @@
-# ng-espack-boilerplate
+# Nagularjs ES6 Webpack boilerplate
 Angular 1.4.8 + ES6 application boilerplate with testing practices  
 [![Dependency Status](https://david-dm.org/ziyasal/ng-espack-boilerplate.svg)](https://david-dm.org/ziyasal/ng-espack-boilerplate) [![devDependency Status](https://david-dm.org/ziyasal/ng-espack-boilerplate/dev-status.svg)](https://david-dm.org/ziyasal/ng-espack-boilerplate#info=devDependencies) [![Build Status](https://travis-ci.org/ziyasal/ng-espack-boilerplate.svg)](https://travis-ci.org/ziyasal/ng-espack-boilerplate) [![Coverage Status](https://coveralls.io/repos/ziyasal/ng-espack-boilerplate/badge.svg?branch=master&service=github)](https://coveralls.io/github/ziyasal/ng-espack-boilerplate?branch=master) 
 
@@ -24,7 +24,7 @@ Angular 1.4.8 + ES6 application boilerplate with testing practices
   - [x] Service test
   - [x] Directive test
   - [x] Filter Test
-  - [ ] Http interceptor Test
+  - [x] Http interceptor Test
   
 
 ##Install
